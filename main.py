@@ -7,9 +7,9 @@ with open("quotes.txt") as data_file:
     quotes = data_file.readlines()
     quote = random.choice(quotes)
 
-my_email = "pythonuser2004@gmail.com"
-my_pass = "wftxnyitnymgfrpi"
-email_receiver = ["nathanflores887@gmail.com", "rbchstrsebastian@gmail.com"]
+my_email = ""
+my_pass = ""
+email_receiver = [""]
 subject = "Daily Motivational Quote."
 body = quote
 
