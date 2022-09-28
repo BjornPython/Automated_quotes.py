@@ -21,11 +21,6 @@ context = ssl.create_default_context()
 
 
 def send_email(recipient):
-    em = EmailMessage()
-    em["From"] = my_email
-    em["To"] = recipient
-    em["Subject"] = subject
-    em.set_content(body)
     context = ssl.create_default_context()
     with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as connection:
         connection.login(my_email, my_pass)
